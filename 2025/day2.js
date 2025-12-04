@@ -14,7 +14,7 @@ function processRange(range, checkId) {
 function checkMalformed(n) {
 	const nStr = n.toString()
 	const length = nStr.length
-	// if (length % 2 !== 0) return false
+	if (length % 2 !== 0) return false
 
 	const firstHalf = nStr.slice(0, length / 2)
 	const secondHalf = nStr.slice(length / 2, length)
